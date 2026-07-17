@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /cart/
+Disallow: /board/write
+Disallow: /*?type=
+
+Sitemap: https://anigamemate.com/sitemap.xml

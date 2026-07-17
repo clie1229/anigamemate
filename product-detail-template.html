@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<!--
+============================================================
+ AnigameMate 상품 상세페이지 템플릿  (URL: /p/<sku>)
+============================================================
+ 이 파일은 "채워진 예시 + 템플릿"입니다. 그대로 열어 미리보기 하고,
+ 상품마다 아래 값만 교체해 복제하세요.
+
+ ▣ 교체 항목 (검색으로 찾아 바꾸세요)
+  · 상품명         : 크로노 트리거 (슈퍼패미컴) 박스풀셋
+  · SKU            : sfc-ct  →  URL(/p/sfc-ct), 이미지 파일명
+  · 기종명/슬러그   : 슈퍼패미컴 / super-famicom  (브레드크럼·내부링크)
+  · 가격           : 185,000  (JSON-LD price 는 콤마 없이 185000)
+  · 상태 등급       : S / A / B / 부품용
+  · 재고           : InStock ↔ OutOfStock  (품절이면 .buybox 에 soldout 처리 안내 참고)
+  · 스펙표          : 구성품·동작·지역코드·세이브 등 상품 실제 값
+  · 검수 문단·FAQ   : 상품별 실물 설명
+
+ ▣ HARD 규칙 (IA/CLAUDE.md)
+  · Product + Offer(itemCondition=UsedCondition, price, availability) JSON-LD 필수
+  · BreadcrumbList JSON-LD 필수, 스펙표에 상태·구성품·동작·지역코드 고정 표기
+  · 미동작은 제목과 스펙표에 "부품용(미동작)" 함께 표기
+  · "정품 최저가·1위·베스트" 등 표시광고법 위험 표현 금지
+  · 가격은 실제 시세 조사 후 교체 (예시는 placeholder)
+  · 기종/타이틀 상표·로고 이미지 무단 사용 금지 (지명적 텍스트 사용만)
+============================================================
+-->
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>크로노 트리거 (슈퍼패미컴) 박스풀셋 중고 | AnigameMate</title>
+<meta name="description" content="크로노 트리거 슈퍼패미컴 중고 박스풀셋. S등급, 박스·설명서·지도 완비, 실기 구동과 세이브 확인 완료. NTSC-J 지역코드 표기, 7일 이내 구동 교환·환불.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://anigamemate.com/p/sfc-ct">
+
+<meta property="og:type" content="product">
+<meta property="og:site_name" content="AnigameMate">
+<meta property="og:title" content="크로노 트리거 (슈퍼패미컴) 박스풀셋 중고 | AnigameMate">
+<meta property="og:description" content="S등급 박스풀셋 · 실기 구동/세이브 확인 완료 · NTSC-J.">
+<meta property="og:url" content="https://anigamemate.com/p/sfc-ct">
+<meta property="og:image" content="https://anigamemate.com/p/sfc-ct-1.jpg">
+<meta property="og:locale" content="ko_KR">
+<meta property="product:price:amount" content="185000">
+<meta property="product:price:currency" content="KRW">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://anigamemate.com/" },
+    { "@type": "ListItem", "position": 2, "name": "레트로게임 중고", "item": "https://anigamemate.com/retro-games" },
+    { "@type": "ListItem", "position": 3, "name": "슈퍼패미컴", "item": "https://anigamemate.com/retro-games/super-famicom" },
+    { "@type": "ListItem", "position": 4, "name": "크로노 트리거 (슈퍼패미컴) 박스풀셋", "item": "https://anigamemate.com/p/sfc-ct" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "크로노 트리거 (슈퍼패미컴) 박스풀셋",
+  "sku": "SFC-CT-S",
+  "category": "레트로게임 > 슈퍼패미컴 > 소프트",
+  "image": [
+    "https://anigamemate.com/p/sfc-ct-1.jpg",
+    "https://anigamemate.com/p/sfc-ct-2.jpg",
+    "https://anigamemate.com/p/sfc-ct-3.jpg"
+  ],
+  "description": "슈퍼패미컴 크로노 트리거 중고 박스풀셋. 박스·설명서·지도 완비, 실기 구동과 세이브 배터리 상태까지 확인한 S등급 상품입니다. 지역코드 NTSC-J.",
+  "itemCondition": "https://schema.org/UsedCondition",
+  "brand": { "@type": "Brand", "name": "슈퍼패미컴" },
+  "offers": {
+    "@type": "Offer",
+    "price": "185000",
+    "priceCurrency": "KRW",
+    "availability": "https://schema.org/InStock",
+    "itemCondition": "https://schema.org/UsedCondition",
+    "url": "https://anigamemate.com/p/sfc-ct",
+    "seller": { "@type": "Organization", "name": "AnigameMate" }
+  }
+}
+</script>
+
+<style>
+  :root{
+    --bg:#fbf7f0; --surface:#ffffff; --ink:#1b1a2e; --muted:#5d5b78;
+    --brand:#3b2f8f; --brand-dark:#241c63; --accent:#e8543f; --accent-soft:#fdeeea;
+    --line:#e6e0d6; --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Pretendard","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  a{color:inherit;text-decoration:none}
+  .mono{font-family:ui-monospace,SFMono-Regular,"D2Coding",Consolas,monospace}
+  .btn{display:inline-block;background:var(--brand);color:#fff;font-weight:600;
+    padding:15px 30px;border-radius:10px;font-size:17px;border:none;cursor:pointer;transition:background .2s;text-align:center}
+  .btn:hover{background:var(--brand-dark)}
+  .btn-accent{background:var(--accent)}
+  .btn-accent:hover{background:#c8412e}
+  .btn-ghost{background:var(--surface);color:var(--brand);border:2px solid var(--brand)}
+  .btn-ghost:hover{background:#f2effb}
+  .btn-muted{background:var(--muted)}
+  .btn-block{display:block;width:100%}
+  header{position:sticky;top:0;z-index:50;background:rgba(251,247,240,.94);
+    backdrop-filter:blur(8px);border-bottom:2px solid var(--ink)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+  .logo{font-weight:800;font-size:20px;color:var(--brand);letter-spacing:-.02em;white-space:nowrap}
+  .logo span{color:var(--accent)}
+  .nav-links{display:flex;gap:18px;align-items:center;font-size:15px}
+  .nav .btn{padding:10px 18px;font-size:15px}
+  .crumb{padding:18px 0 0;font-size:14px;color:var(--muted)}
+  .crumb a:hover{color:var(--brand)}
+
+  /* ---- 상단: 갤러리 + 구매박스 ---- */
+  .pd-top{display:grid;grid-template-columns:1fr 1fr;gap:38px;padding:28px 0 8px;align-items:start}
+  .gallery .main{aspect-ratio:4/3;background:#efe9dd;border:2px solid var(--ink);border-radius:var(--radius);
+    display:flex;align-items:center;justify-content:center;color:#a89f8d;font-size:13px;letter-spacing:.06em}
+  .thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+  .thumbs .t{aspect-ratio:1/1;background:#efe9dd;border:1px solid var(--line);border-radius:10px;
+    display:flex;align-items:center;justify-content:center;color:#a89f8d;font-size:11px;cursor:pointer}
+  .thumbs .t:hover{border-color:var(--brand)}
+
+  .buybox h1{font-size:clamp(22px,3.4vw,30px);line-height:1.28;letter-spacing:-.02em;font-weight:800;margin-bottom:12px}
+  .chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+  .chip{font-size:12px;font-weight:700;padding:4px 9px;border-radius:6px;background:#eee9f7;color:var(--brand)}
+  .chip.g{background:var(--accent-soft);color:var(--accent)}
+  .chip.off{background:#eceaf0;color:var(--muted)}
+  .price{font-size:30px;font-weight:800;letter-spacing:-.02em;margin:6px 0 4px}
+  .price.soldout{color:var(--muted);text-decoration:line-through}
+  .stock{font-size:14px;font-weight:700;color:#2e7d5b;margin-bottom:18px}
+  .stock.out{color:var(--accent)}
+  .quick{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:18px}
+  .quick dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:14px}
+  .quick dt{color:var(--muted)}
+  .quick dd{font-weight:600}
+  .cta-col{display:flex;flex-direction:column;gap:10px;max-width:420px}
+  .cta-row{display:flex;gap:10px}
+  .cta-row .btn{flex:1}
+  .ship-note{font-size:13px;color:var(--muted);margin-top:12px;line-height:1.7}
+
+  section{padding:36px 0}
+  h2.title{font-size:clamp(19px,3vw,25px);letter-spacing:-.02em;margin-bottom:6px;font-weight:800}
+  .sub{color:var(--muted);margin-bottom:22px}
+  .panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:26px 28px;max-width:860px}
+  .panel p{color:var(--muted);font-size:15px;margin-bottom:10px}
+  .panel p:last-child{margin-bottom:0}
+  .panel strong{color:var(--ink)}
+  table{width:100%;border-collapse:collapse;background:var(--surface);border:2px solid var(--ink);
+    border-radius:var(--radius);overflow:hidden;max-width:860px}
+  caption{caption-side:top;text-align:left;color:var(--muted);font-size:14px;padding-bottom:10px}
+  th,td{padding:13px 16px;text-align:left;border-bottom:1px solid var(--line);font-size:14px;vertical-align:top}
+  tbody th{background:#f4efe5;font-weight:700;width:150px;white-space:nowrap}
+  tbody tr:last-child td,tbody tr:last-child th{border-bottom:none}
+  .grade{font-weight:800;color:var(--accent)}
+  .ok{color:#2e7d5b;font-weight:700}
+  .warn{color:var(--accent);font-weight:700}
+  .faq{max-width:860px}
+  details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:4px 22px;margin-bottom:12px}
+  summary{cursor:pointer;font-weight:600;padding:16px 0;list-style:none;position:relative;font-size:15px}
+  summary::after{content:"+";position:absolute;right:0;color:var(--accent);font-size:22px}
+  details[open] summary::after{content:"−"}
+  details p{padding:0 0 16px;color:var(--muted);font-size:15px}
+  .rel-prods{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .rp{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:block;
+    transition:border-color .15s,transform .15s}
+  .rp:hover{border-color:var(--brand);transform:translateY(-2px)}
+  .rp .th{aspect-ratio:4/3;background:#efe9dd;display:flex;align-items:center;justify-content:center;
+    color:#a89f8d;font-size:11px;border-bottom:1px solid var(--line)}
+  .rp .b{padding:12px 13px 14px}
+  .rp h4{font-size:13px;line-height:1.4;margin-bottom:6px;min-height:36px}
+  .rp .p{font-size:15px;font-weight:800}
+  footer{border-top:2px solid var(--ink);padding:44px 0;color:var(--muted);font-size:14px;margin-top:20px}
+  .foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px}
+  address{font-style:normal;line-height:1.9}
+  @media(max-width:860px){
+    .pd-top{grid-template-columns:1fr;gap:24px}
+    .rel-prods{grid-template-columns:repeat(2,1fr)}
+  }
+  @media(max-width:600px){
+    .nav-links{display:none}
+    section{padding:30px 0}
+    table{display:block;overflow-x:auto}
+    .rel-prods{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html">Anigame<span>Mate</span></a>
+    <nav class="nav-links" aria-label="주요 메뉴">
+      <a href="retro-games.html">레트로게임</a>
+      <a href="character-goods.html">캐릭터굿즈</a>
+      <a href="doujin.html">자가출판물</a>
+      <a href="anime-goods.html">애니굿즈</a>
+      <a href="board.html">게시판</a>
+      <a href="https://blog.naver.com/tryforyou" target="_blank" rel="noopener noreferrer">네이버 ↗</a>
+      <a href="https://anigamemate.tistory.com/" target="_blank" rel="noopener noreferrer">티스토리 ↗</a>
+      <a href="https://smartstore.naver.com/anigamemate" target="_blank" rel="noopener noreferrer">스마트스토어 ↗</a>
+    </nav>
+    <a class="btn" href="#alert">재입고 알림</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <nav class="crumb" aria-label="브레드크럼">
+      <a href="index.html">홈</a> ›
+      <a href="retro-games.html">레트로게임 중고</a> ›
+      <a href="retro-games-super-famicom.html">슈퍼패미컴</a> ›
+      <span aria-current="page">크로노 트리거 박스풀셋</span>
+    </nav>
+
+    <!-- ========== 상단: 갤러리 + 구매박스 ========== -->
+    <div class="pd-top">
+      <div class="gallery">
+        <div class="main">대표 실물 사진 (1200×900)</div>
+        <div class="thumbs">
+          <div class="t">전면</div>
+          <div class="t">후면</div>
+          <div class="t">설명서·지도</div>
+          <div class="t">라벨 접사</div>
+        </div>
+      </div>
+
+      <div class="buybox">
+        <h1>크로노 트리거 (슈퍼패미컴) 박스풀셋</h1>
+        <div class="chips">
+          <span class="chip g">S등급</span>
+          <span class="chip">박스풀셋</span>
+          <span class="chip">NTSC-J</span>
+          <span class="chip">세이브 정상</span>
+        </div>
+        <p class="price">185,000원</p>
+        <p class="stock">재고 있음 · 실기 구동 확인 완료</p>
+
+        <div class="quick">
+          <dl>
+            <dt>기종</dt><dd>슈퍼패미컴 (SFC)</dd>
+            <dt>상품유형</dt><dd>소프트 (타이틀)</dd>
+            <dt>구성</dt><dd>박스·설명서·지도 완비</dd>
+            <dt>지역코드</dt><dd>NTSC-J (일본판)</dd>
+          </dl>
+        </div>
+
+        <div class="cta-col">
+          <div class="cta-row">
+            <a class="btn btn-accent" href="/cart/add?sku=sfc-ct">바로 구매</a>
+            <a class="btn btn-ghost" href="/cart/add?sku=sfc-ct&amp;stay=1">장바구니</a>
+          </div>
+          <!-- 품절 시: 위 cta-row 대신 아래 한 줄로 교체
+          <a class="btn btn-muted btn-block" href="#alert">재입고 알림 신청</a> -->
+        </div>
+        <p class="ship-note">
+          평일 15시 이전 결제 시 당일 출고 · 굿즈 전용 완충 포장<br>
+          수령 후 7일 이내 구동 문제 확인 시 교환 또는 환불
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== 상세 스펙표 (IA 고정 항목) ========== -->
+  <section id="spec">
+    <div class="wrap">
+      <h2 class="title">상품 상세 정보</h2>
+      <p class="sub">모든 상품에 같은 항목을 같은 형식으로 표기합니다</p>
+      <table>
+        <caption>등급은 외관 기준이며, 동작 확인 결과는 등급과 별도로 표기합니다.</caption>
+        <tbody>
+          <tr><th scope="row">상태 등급</th><td><span class="grade mono">S</span> · 미개봉 또는 사용감 거의 없음</td></tr>
+          <tr><th scope="row">구성품</th><td>박스풀셋 (외박스 · 카트리지 · 설명서 · 월드맵 지도)</td></tr>
+          <tr><th scope="row">동작 확인</th><td><span class="ok">확인 완료</span> · 실기 구동 및 게임 진행 정상</td></tr>
+          <tr><th scope="row">세이브</th><td><span class="ok">정상</span> · 내부 배터리(CR2032) 세이브 유지 확인</td></tr>
+          <tr><th scope="row">지역코드</th><td>NTSC-J (일본판) · 국내 유통 본체 및 일본 본체 호환</td></tr>
+          <tr><th scope="row">외관 상태</th><td>박스 모서리 눌림 미세 · 카트리지 라벨 온전 · 스파인 인쇄 선명</td></tr>
+          <tr><th scope="row">기종 / 유형</th><td>슈퍼패미컴 (SFC · 1990) / 소프트</td></tr>
+          <tr><th scope="row">상품번호(SKU)</th><td class="mono">SFC-CT-S</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ========== 검수 내용 (E-E-A-T 신뢰 신호) ========== -->
+  <section id="inspection" style="background:#f4efe5">
+    <div class="wrap">
+      <h2 class="title">이 상품 검수 내용</h2>
+      <p class="sub">등록 전 실제로 확인한 항목만 적습니다</p>
+      <div class="panel">
+        <p><strong>구동 테스트</strong> — 슈퍼패미컴 실기에 카트리지를 꽂아 타이틀 화면부터 실제 게임 진행까지 확인했습니다. 화면 노이즈나 프리징 없이 정상 구동됩니다.</p>
+        <p><strong>세이브 확인</strong> — 세이브 슬롯에 데이터를 기록하고 전원을 껐다 켠 뒤 유지되는지 확인했습니다. 내부 배터리가 살아 있어 세이브가 정상 유지됩니다.</p>
+        <p><strong>외관 검수</strong> — 박스는 보관 과정의 미세한 모서리 눌림 외 큰 손상이 없고, 카트리지 라벨과 설명서·지도는 온전합니다. 실물 상태는 대표 사진과 접사 사진에 그대로 담았습니다.</p>
+        <p>중고 특성상 사진에 담기지 않은 미세한 사용감이 있을 수 있습니다. 궁금한 점은 <a href="mailto:help@anigamemate.com" style="color:var(--brand);font-weight:600">문의</a>로 추가 사진을 요청하실 수 있습니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 상태 등급 기준 (전 상품 공통) ========== -->
+  <section id="grade">
+    <div class="wrap">
+      <h2 class="title">상태 등급 기준</h2>
+      <p class="sub">모든 기종·상품에 같은 기준을 적용합니다</p>
+      <table>
+        <thead>
+          <tr><th scope="col">등급</th><th scope="col">외관 상태</th><th scope="col">구성품</th><th scope="col">동작</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><span class="grade mono">S</span></td><td>미개봉 또는 사용감 거의 없음</td><td>박스·설명서 완비</td><td>확인 완료</td></tr>
+          <tr><td><span class="grade mono">A</span></td><td>경미한 사용감, 라벨 온전</td><td>박스 또는 설명서 일부</td><td>확인 완료</td></tr>
+          <tr><td><span class="grade mono">B</span></td><td>흠집·변색 있음, 플레이 지장 없음</td><td>본품만</td><td>확인 완료</td></tr>
+          <tr><td><span class="grade mono">부품용</span></td><td>상태 무관</td><td>본품만</td><td>미동작 (제목에 명시)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ========== 배송·교환·환불 ========== -->
+  <section id="policy" style="background:#f4efe5">
+    <div class="wrap">
+      <h2 class="title">배송 · 교환 · 환불 안내</h2>
+      <p class="sub">중고 상품 거래 기준</p>
+      <div class="panel">
+        <p><strong>배송</strong> — 평일 15시 이전 결제 시 당일 출고됩니다. 파손에 약한 상품은 완충재로 한 번 더 감싸 발송합니다.</p>
+        <p><strong>교환·환불</strong> — 수령 후 7일 이내 구동 문제나 상세페이지 표기와 다른 점이 확인되면 교환 또는 환불해 드립니다. 단순 변심 반품은 왕복 배송비가 부과됩니다.</p>
+        <p><strong>부품용 상품</strong> — 제목에 <span class="warn">부품용(미동작)</span>으로 표기된 상품은 동작을 보증하지 않으며, 미동작을 사유로 한 교환·환불 대상에서 제외됩니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 상품 FAQ ========== -->
+  <section id="faq">
+    <div class="wrap">
+      <h2 class="title">이 상품 자주 묻는 질문</h2>
+      <p class="sub">구매 전 확인하세요</p>
+      <div class="faq">
+        <details open>
+          <summary>세이브가 안 되면 어떻게 하나요?</summary>
+          <p>이 상품은 등록 전 세이브 유지까지 확인했습니다. 그럼에도 수령 후 7일 이내 세이브 문제가 확인되면 교환 또는 환불해 드립니다. 배터리 교체가 필요한 상품은 상세페이지에 별도로 표기합니다.</p>
+        </details>
+        <details>
+          <summary>일본판인데 국내 본체에서 되나요?</summary>
+          <p>슈퍼패미컴은 국내 유통 본체와 일본 본체가 NTSC-J 계열로 호환됩니다. 보유하신 본체가 일본판·국내 유통판이면 문제없이 구동됩니다.</p>
+        </details>
+        <details>
+          <summary>박스풀셋 구성품이 모두 있나요?</summary>
+          <p>네. 외박스·카트리지·설명서·월드맵 지도가 모두 포함됩니다. 각 구성품 상태는 대표 사진과 접사 사진에서 확인하실 수 있습니다.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 같은 기종 다른 상품 ========== -->
+  <section id="related">
+    <div class="wrap">
+      <h2 class="title">같은 기종 다른 상품</h2>
+      <p class="sub">슈퍼패미컴 중고 더 보기 · <a href="retro-games-super-famicom.html" style="color:var(--brand);font-weight:600">전체 보기</a></p>
+      <div class="rel-prods">
+        <a class="rp" href="product-sfc-smk.html">
+          <div class="th">실물 사진</div>
+          <div class="b"><h4>슈퍼마리오 카트 (슈퍼패미컴)</h4><p class="p">32,000원</p></div>
+        </a>
+        <a class="rp" href="product-sfc-console.html">
+          <div class="th">실물 사진</div>
+          <div class="b"><h4>슈퍼패미컴 본체 (SHVC-001)</h4><p class="p">95,000원</p></div>
+        </a>
+        <a class="rp" href="product-fc-dq3.html">
+          <div class="th">실물 사진</div>
+          <div class="b"><h4>드래곤퀘스트 III (패미컴) 박스풀셋</h4><p class="p">125,000원</p></div>
+        </a>
+        <a class="rp" href="product-n64-oot.html">
+          <div class="th">실물 사진</div>
+          <div class="b"><h4>젤다의 전설 시간의 오카리나 (N64)</h4><p class="p">58,000원</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 재입고 알림 ========== -->
+  <section id="alert" style="background:#f4efe5">
+    <div class="wrap">
+      <div class="panel" style="max-width:none;text-align:center">
+        <h2 class="title" style="margin-bottom:8px">같은 타이틀 다른 등급을 찾으시나요?</h2>
+        <p style="margin-bottom:18px">입고되면 가장 먼저 알려드립니다.</p>
+        <form action="/subscribe" method="post" style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;max-width:470px;margin:0 auto">
+          <label for="email" style="position:absolute;left:-9999px">이메일 주소</label>
+          <input id="email" name="email" type="email" required placeholder="이메일 주소를 입력하세요"
+            style="flex:1;min-width:210px;padding:14px 18px;border-radius:10px;border:1px solid var(--line);font-size:16px;font-family:inherit;color:var(--ink)">
+          <button type="submit" class="btn btn-accent">알림 신청</button>
+        </form>
+        <p style="margin-top:12px;font-size:13px;color:var(--muted)">광고성 정보 수신에 동의하게 되며, 언제든 무료로 수신거부할 수 있습니다.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+    <div class="wrap">
+    <nav aria-label="푸터 링크" style="display:flex;gap:16px 18px;flex-wrap:wrap;padding-bottom:22px;margin-bottom:22px;border-bottom:1px solid var(--line);font-size:14px;font-weight:600;color:var(--brand)">
+      <a href="index.html">홈</a>
+      <a href="retro-games.html">레트로게임</a>
+      <a href="character-goods.html">캐릭터굿즈</a>
+      <a href="doujin.html">자가출판물</a>
+      <a href="anime-goods.html">애니굿즈</a>
+      <a href="board.html">게시판</a>
+      <a href="about.html">회사소개</a>
+      <a href="terms.html">이용약관</a>
+      <a href="privacy.html">개인정보처리방침</a>
+      <a href="https://blog.naver.com/tryforyou" target="_blank" rel="noopener noreferrer">네이버 블로그 ↗</a>
+      <a href="https://anigamemate.tistory.com/" target="_blank" rel="noopener noreferrer">티스토리 ↗</a>
+      <a href="https://smartstore.naver.com/anigamemate" target="_blank" rel="noopener noreferrer">스마트스토어 ↗</a>
+    </nav>
+  </div>
+  <div class="wrap foot">
+    <div>
+      <p class="logo" style="font-size:18px;margin-bottom:8px">Anigame<span>Mate</span></p>
+      <address>
+        서울 ○○구 ○○로 00, 0층<br>
+        문의 <a href="mailto:help@anigamemate.com">help@anigamemate.com</a> · 평일 10:00–18:00
+      </address>
+    </div>
+    <div>
+      <p>© 2026 AnigameMate. All rights reserved.</p>
+      <p>사업자등록번호 000-00-00000 · 통신판매업신고 제0000-서울○○-0000호</p>
+      <p>슈퍼패미컴 및 크로노 트리거의 상표권과 저작권은 해당 권리자에게 있습니다.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
