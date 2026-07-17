@@ -25,7 +25,6 @@ FOOTLINKS = """  <div class="wrap">
       <a href="privacy.html">개인정보처리방침</a>
       <a href="https://blog.naver.com/tryforyou" target="_blank" rel="noopener noreferrer">네이버 블로그 ↗</a>
       <a href="https://anigamemate.tistory.com/" target="_blank" rel="noopener noreferrer">티스토리 ↗</a>
-      <a href="https://smartstore.naver.com/anigamemate" target="_blank" rel="noopener noreferrer">스마트스토어 ↗</a>
     </nav>
   </div>
 """
