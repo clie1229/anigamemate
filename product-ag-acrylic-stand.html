@@ -233,8 +233,13 @@
 
     <div class="hero">
       <div class="gallery">
-        <img class="main" src="img/ag-acrylic-stand.svg" alt="대표 이미지" style="width:100%;height:100%;object-fit:cover">
-        <div class="gthumbs"><div>정면</div><div>후면</div><div>디테일</div><div>구성</div></div>
+        <img class="main" id="pmain" id="pmain" src="img/ag-acrylic-stand-1.svg" alt="대표 이미지" style="width:100%;height:100%;object-fit:cover">
+        <div class="gthumbs">
+          <img src="img/ag-acrylic-stand-1.svg" alt="정면" class="on" onclick="pmset(this)">
+          <img src="img/ag-acrylic-stand-2.svg" alt="후면" onclick="pmset(this)">
+          <img src="img/ag-acrylic-stand-3.svg" alt="디테일" onclick="pmset(this)">
+          <img src="img/ag-acrylic-stand-4.svg" alt="구성" onclick="pmset(this)">
+        </div>
       </div>
       <div id="buy">
         <div class="chips"><span class="chip g">새제품</span><span class="chip">한정</span><span class="chip">정발</span></div>
@@ -294,7 +299,7 @@
       <h2 class="title">함께 보는 아크릴 굿즈 상품</h2>
       <p class="sub">같은 분류의 다른 상품</p>
       <div class="prods">
-        <a class="prod" href="product-ag-acrylic-keyring.html"><img class="thumb" src="img/ag-acrylic-keyring.svg" alt="상품 대표 이미지" loading="lazy" style="width:100%;height:100%;object-fit:cover">
+        <a class="prod" href="product-ag-acrylic-keyring.html"><img class="thumb" src="img/ag-acrylic-keyring-1.svg" alt="상품 대표 이미지" loading="lazy" style="width:100%;height:100%;object-fit:cover">
           <div class="prod-body"><div class="chips"><span class="chip g">새제품</span></div><h3>아크릴 키링 블라인드 1개</h3><p class="price">8,000원</p></div></a>
         <a class="prod" href="anime-goods-acrylic.html"><div class="thumb">카테고리</div>
           <div class="prod-body"><div class="chips"><span class="chip">전체</span></div><h3>아크릴 굿즈 전체 보기</h3><p class="price">더보기</p></div></a>
@@ -316,6 +321,7 @@
       </div>
     </div>
   </section>
+<style>.thumbs img,.gthumbs img{aspect-ratio:1;width:100%;object-fit:cover;border:1px solid var(--line);border-radius:8px;cursor:pointer;background:#efe9dd}.thumbs img.on,.gthumbs img.on{border:2px solid var(--brand)}.thumbs img:hover,.gthumbs img:hover{border-color:var(--brand)}</style><script>function pmset(el){var m=document.getElementById("pmain");m.src=el.src;m.alt=el.alt;document.querySelectorAll(".thumbs img,.gthumbs img").forEach(function(i){i.classList.remove("on")});el.classList.add("on")}</script>
 </main>
 
 <footer>

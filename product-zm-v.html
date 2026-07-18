@@ -316,12 +316,12 @@
     <div class="hero">
 
       <div class="gallery">
-        <img class="main" src="img/zm-v.svg" alt="대표 이미지" style="width:100%;height:100%;object-fit:cover">
+        <img class="main" id="pmain" id="pmain" src="img/zm-v-1.svg" alt="대표 이미지" style="width:100%;height:100%;object-fit:cover">
         <div class="thumbs">
-          <div>정면</div>
-          <div>후면</div>
-          <div>단자·상태</div>
-          <div>구동 화면</div>
+          <img src="img/zm-v-1.svg" alt="정면" class="on" onclick="pmset(this)">
+          <img src="img/zm-v-2.svg" alt="후면" onclick="pmset(this)">
+          <img src="img/zm-v-3.svg" alt="단자·케이블" onclick="pmset(this)">
+          <img src="img/zm-v-4.svg" alt="구성품" onclick="pmset(this)">
         </div>
         <p class="shot-note">
           모든 사진은 보정 없이 실제 판매 상품을 촬영한 것입니다. 흠집이나 변색도 그대로 담습니다.
@@ -454,7 +454,7 @@
       <p class="sub">같은 기종의 다른 상품</p>
       <div class="prods">
         <a class="prod" href="product-zm-superv.html">
-          <img class="thumb" src="img/zm-superv.svg" alt="상품 대표 이미지" loading="lazy" style="width:100%;height:100%;object-fit:cover">
+          <img class="thumb" src="img/zm-superv-1.svg" alt="상품 대표 이미지" loading="lazy" style="width:100%;height:100%;object-fit:cover">
           <div class="prod-body">
             <div class="chips"><span class="chip g">A등급</span></div>
             <h3>재믹스 슈퍼브이 본체</h3>
@@ -462,7 +462,7 @@
           </div>
         </a>
         <a class="prod" href="product-zm-cart.html">
-          <img class="thumb" src="img/zm-cart.svg" alt="상품 대표 이미지" loading="lazy" style="width:100%;height:100%;object-fit:cover">
+          <img class="thumb" src="img/zm-cart-1.svg" alt="상품 대표 이미지" loading="lazy" style="width:100%;height:100%;object-fit:cover">
           <div class="prod-body">
             <div class="chips"><span class="chip g">B등급</span></div>
             <h3>MSX 게임팩 (재믹스 호환)</h3>
@@ -488,6 +488,7 @@
       </div>
     </div>
   </section>
+<style>.thumbs img,.gthumbs img{aspect-ratio:1;width:100%;object-fit:cover;border:1px solid var(--line);border-radius:8px;cursor:pointer;background:#efe9dd}.thumbs img.on,.gthumbs img.on{border:2px solid var(--brand)}.thumbs img:hover,.gthumbs img:hover{border-color:var(--brand)}</style><script>function pmset(el){var m=document.getElementById("pmain");m.src=el.src;m.alt=el.alt;document.querySelectorAll(".thumbs img,.gthumbs img").forEach(function(i){i.classList.remove("on")});el.classList.add("on")}</script>
 </main>
 
 <footer>
