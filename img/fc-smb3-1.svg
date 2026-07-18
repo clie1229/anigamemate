@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="슈퍼마리오브라더스 3 (패미컴) 카트리지 정면">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6f3ec"/><stop offset="1" stop-color="#e7e1d5"/></linearGradient></defs>
+<rect width="400" height="300" fill="url(#bg)"/>
+<rect x="120" y="46" width="160" height="208" rx="14" fill="#d7d1c4" stroke="#b3aa98" stroke-width="2"/>
+<path d="M120 60 q0-14 14-14 h132 q14 0 14 14 v34 h-160 z" fill="#e8543f"/>
+<rect x="138" y="106" width="124" height="100" rx="4" fill="#ffffff" stroke="#cbc3b2"/>
+<text x="200" y="138" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="15" fill="#3b2f8f">슈퍼마리오</text>
+<text x="200" y="160" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="15" fill="#3b2f8f">브라더스 3</text>
+<text x="200" y="190" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#8a8271" letter-spacing="2">FAMICOM · HVC</text>
+<rect x="150" y="216" width="100" height="24" rx="3" fill="#cfc8b8"/>
+<rect x="14" y="14" width="60" height="28" rx="14" fill="#1b1a2e" opacity="0.9"/><text x="44.0" y="33" text-anchor="middle" fill="#ffffff" font-size="14" font-family="sans-serif" font-weight="700">정면</text>
+<text x="200" y="290" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#000" opacity="0.28" letter-spacing="1">AnigameMate · 예시 이미지</text>
+</svg>

@@ -254,17 +254,26 @@
     <div class="hero">
 
       <div class="gallery">
-        <img class="main" src="img/fc-smb3.svg" alt="대표 이미지" style="width:100%;height:100%;object-fit:cover">
+        <img class="main" id="pmain" src="img/fc-smb3-1.svg" alt="슈퍼마리오브라더스 3 (패미컴) 정면" style="width:100%;height:100%;object-fit:cover">
         <div class="thumbs">
-          <div>정면</div>
-          <div>후면</div>
-          <div>단자</div>
-          <div>구동 화면</div>
+          <img src="img/fc-smb3-1.svg" alt="정면" class="on" onclick="pmset(this)">
+          <img src="img/fc-smb3-2.svg" alt="후면" onclick="pmset(this)">
+          <img src="img/fc-smb3-3.svg" alt="단자 근접" onclick="pmset(this)">
+          <img src="img/fc-smb3-4.svg" alt="구동 화면" onclick="pmset(this)">
         </div>
         <p class="shot-note">
-          모든 사진은 보정 없이 실제 판매 상품을 촬영한 것입니다. 흠집이나 변색도 그대로 담습니다.
+          썸네일을 누르면 큰 이미지가 바뀝니다. <strong>예시 이미지</strong>이며, 실제 판매 시 보정 없이 촬영한 실물 사진(정면·후면·단자·구동 화면)으로 교체합니다.
         </p>
       </div>
+      <style>
+        .thumbs img{aspect-ratio:1;width:100%;object-fit:cover;border:1px solid var(--line);border-radius:8px;cursor:pointer;background:#efe9dd;transition:border-color .15s}
+        .thumbs img:hover{border-color:var(--brand)}
+        .thumbs img.on{border:2px solid var(--brand)}
+        .gallery .main{cursor:zoom-in}
+      </style>
+      <script>
+        function pmset(el){var m=document.getElementById('pmain');m.src=el.src;m.alt=el.alt;document.querySelectorAll('.thumbs img').forEach(function(i){i.classList.remove('on');});el.classList.add('on');}
+      </script>
 
       <div id="buy">
         <div class="chips">
